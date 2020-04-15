@@ -1,0 +1,36 @@
+<div class="row cardInstrumentRow">
+    <% products.forEach(function(el){%>
+      
+      <div type="submit" class="col-xl-3 col-lg-4 col-sm-6 cardInstrument" name=<%=el.id%> value=<%=el.company%> price="<%= el.price%>">
+      
+        <div class="cardInstrumentImgDiv" style=<%=el.url%>></div>
+      
+        <div  class="cardInstrumentContent">
+          <h3 align="center" class="cardInstrumentContenth1"><%= el.name %></h3>
+          <p class="cardInstrumentContentP" ><%= el.description%></p>
+          <h3 class="cardInstrumentPrice"><%= el.price%>€</h3>
+        
+          <form action="/warenkorb" method="POST">
+            <button type="submit" class="warenkorbCardBtn" name=<%= el.name%> value=<%= el.id%>>
+              <div class="warenkorbCardBtnDiv">
+                <p class="warenkorbCardBtnText">in den Warenkorb</p>
+                <div class="warenkorbCardBtnIcon"></div>
+              </div>
+            </button>
+          </form>
+        
+        </div>
+      
+      </div>
+    
+      <%});%> 
+    </div>
+    <script>
+      var cardInstrument= document.querySelectorAll(".cardInstrument")
+      cardInstrument.forEach((el)=>{
+        el.addEventListener(("click"),(e)=>{
+          window.location.href = 
+          "http://localhost:3000/produktWahl?"+"id"+"="+el.getAttribute("name")/* +"="+el.getAttribute("value") */;
+        })
+      })
+    </script>

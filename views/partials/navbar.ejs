@@ -1,0 +1,73 @@
+<div class="container-fluid homeContainer">
+  <div class="row navbarRow">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 navColLogo">
+
+      <form class="meloopLogoBtnForm" action="/" method="GET">
+        <button class="meloopLogoBtn">
+          <div type="button" class="meloopLogoImg"></div>
+        </button>
+
+
+
+      </form>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 navColRight">
+      <div class="row navbarRight">
+        <!-- platzhalter col für lg und xl -->
+        <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0"></div>
+        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 searchFieldCol">
+          <form action="/searchPost" method="POST">
+            <div class="input-group mb-3 searchDiv">
+
+              <input type="text" name="itemSearch" id="navSearchFieldInput" class="form-control "
+                placeholder="Suchbegriff...">
+              <div class="input-group-append">
+                <button class="btn navSearchBtn" type="submit"><img class="btnSearchImg"
+                    src="https://i.ibb.co/KwcgV7G/Group-9.png" alt=""></button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 meinKontoCol">
+
+          <button class="meinKontoBtn"><img class="meinKontoImg" src="https://i.ibb.co/jJQv0kd/Icon-material-person.png"
+              alt="">
+            <p class="meinKontoBtnText">Mein Konto</p>
+          </button>
+
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-6 warenkorbCol">
+          <div class="warenkorbDiv">
+            <form action="/warenkorb" method="GET">
+              <button class="warenkorbBtn" type="submit"><img class="warenkornImg"
+                  src="https://i.ibb.co/x3QJjdy/Icon-awesome-shopping-cart.png" alt=""></button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row navbarSecondRow">
+    <div class="col-xl-3 col-lg-3 col-md-0 col-sm-0"></div>
+    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 navBtnCol">
+      <div class="row">
+        <form class="col-3" action="/gitarrenKategorie" method="GET">
+          <button class="navBtn">Gitarren</button>
+        </form>
+        <form class="col-3" action="/verstaerkerKategorie" method="GET">
+          <button class="navBtn">Verstärker</button>
+        </form>
+        <form class="col-3" action="/mikrofoneKategorie" method="GET">
+          <button class="navBtn">Mikrofone</button>
+        </form>
+        <form class="col-3" action="/drumsKategorie" method="GET">
+          <button class="navBtn">Drums</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-0 col-sm-0"></div>
+  </div>

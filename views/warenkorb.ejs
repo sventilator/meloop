@@ -1,0 +1,14 @@
+<%- include('partials/header') -%>
+<%- include('partials/navbar') -%>
+
+<% warenkorb.forEach(function(el){ %>
+<h1 class="warenkorbEntryName"><%=el.name%></h1>
+<form action="warenkorb" method="DELETE">
+<button type="submit" class="warenkorbDeleteBtn" name=<%= el.name%> value=<%= el.id%>>löschen</button>
+</form>
+<%})%>
+<div>_________________________</div>
+<h3>Gesamtpreis:</h3><h3><%= warenkorbPriceSum%>€</h3>
+
+
+<%- include('partials/footer') -%>

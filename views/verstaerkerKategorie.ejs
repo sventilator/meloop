@@ -1,0 +1,102 @@
+<%- include('partials/header') -%>
+<%- include('partials/navbar') -%>
+<div class="row-fluid kategorieBannerVerstaerker">
+    <div class="kategorieBannerOverlay"></div>
+    <h1  class="kategorieBannerText" align="center">Unsere Auswahl an Verstärkern!</h1>
+    <div class="seperatorKategorieBanner"></div>
+
+</div>
+<div class="row kategorieFilterRow">
+<div class="col-xl-2 col-lg-2 col-sm-12 filterCol">
+  <div class="filterDiv">
+    <div class="filterHerstellerHeadline">
+      
+      <h3 align="center" class="filterHerstellerHeadlineText">Hersteller</h3>
+      
+    </div>
+
+    <div class="filterInnerDiv">
+      
+      <input type="checkbox" id="Blackstar" class="filterInput" name="Blackstar" value="Blackstar">
+      <label for="Blackstar" class="filterLabel">Blackstar</label><br>
+      <input type="checkbox" id="Orange" class="filterInput" name="Orange" value="Orange">
+      <label for="Orange" class="filterLabel">Orange</label><br>
+      <input type="checkbox" id="Fender" class="filterInput" name="Fender" value="Fender">
+      <label for="Fender" class="filterLabel">Fender</label><br>
+      
+     
+      
+    
+    <form action="/verstaerkerSortAsce" method="GET">
+      <button id="sortBtn1">Preis
+        <i class="fa fa-chevron-up iconSort"></i>
+         </button>
+    </form>
+        <form action="/verstaerkerSortDesc" method="GET">
+          <button id="sortBtn2">Preis
+            <i class="fa fa-chevron-down iconSort"></i>
+             </button>
+          </form>
+        </div>
+      </div>
+    </div>
+<div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+  
+  <%- include('cardRender') -%>
+  <script>
+   getFilter=document.querySelectorAll(".filterInput")
+   cardElements=document.querySelectorAll(".cardInstrument");
+   checkboxBlackstar=document.querySelector("#Blackstar")
+   checkboxOrange=document.querySelector("#Orange")
+   checkboxFender=document.querySelector("#Fender")
+   
+   
+   //zeige elemente des ausgewählten filters..alle anderen verschwinden
+   //wenn keine checkbox ausgewählt ist, werden alle angezeigt
+   getFilter.forEach((gf)=>{
+     gf.addEventListener("change",(gfevent)=>{
+       if(gf.checked==true){
+         cardElements.forEach((ce)=>{
+           if(gf.name==ce.getAttribute("value"))
+           ce.classList.add("show"+gf.name)
+           ce.style.display="none"
+           console.log("show"+gf.name)
+       
+         })
+         
+       }
+       else if(checkboxBlackstar.checked==false&&checkboxOrange.checked==false&&checkboxFender.checked==false){
+        cardElements.forEach((ce)=>{
+            ce.classList.remove("show"+gf.name)
+           ce.style.display="block"
+         })
+       }
+       else{
+        cardElements.forEach((ce)=>{
+           if(gf.name==ce.getAttribute("value"))
+           ce.classList.remove("show"+gf.name)
+           
+         })
+
+       }
+     })
+   })
+   
+  
+   </script> 
+   
+   
+  
+      
+  
+
+</div>
+</div>
+
+
+
+
+
+
+
+<%- include('partials/footer') -%>

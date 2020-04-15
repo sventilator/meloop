@@ -1,0 +1,101 @@
+<%- include('partials/header') -%>
+<%- include('partials/navbar') -%>
+<div class="row-fluid kategorieBannerDrums">
+    <div class="kategorieBannerOverlay"></div>
+    <h1  class="kategorieBannerText" align="center">Unsere Auswahl an Drums!</h1>
+    <div class="seperatorKategorieBanner"></div>
+
+</div>
+<div class="row kategorieFilterRow">
+<div class="col-xl-2 col-lg-2 col-sm-12 filterCol">
+  <div class="filterDivDrums">
+    <div class="filterHerstellerHeadline">
+      
+      <h3 align="center" class="filterHerstellerHeadlineText">Hersteller</h3>
+      
+    </div>
+
+    <div class="filterInnerDiv">
+      
+      <input type="checkbox" id="Paiste" class="filterInput" name="Paiste" value="Paiste">
+      <label for="Paiste" class="filterLabel">Paiste</label><br>
+      <input type="checkbox" id="DW" class="filterInput" name="DW" value="DW">
+      <label for="DW" class="filterLabel">DW</label><br>
+      <input type="checkbox" id="Gretsch" class="filterInput" name="Gretsch" value="Gretsch">
+      <label for="Gretsch" class="filterLabel">Gretsch</label><br>
+      <input type="checkbox" id="Pearl" class="filterInput" name="Pearl" value="Pearl">
+      <label for="Pearl" class="filterLabel">Pearl</label><br>
+     
+      
+    
+ 
+    <form action="/drumsSortAsce" method="GET">
+      <button id="sortBtn1">Preis
+        <i class="fa fa-chevron-up iconSort"></i>
+         </button>
+    </form>
+      <form action="/drumsSortDesc" method="GET">
+        <button id="sortBtn2">Preis
+          <i class="fa fa-chevron-down iconSort"></i>
+           </button>
+        </form>
+      </div>
+    </div>
+  </div>
+<div class="col-xl-10 col-lg-10 col-md-12 col-sm-122">
+  
+  <%- include('cardRender') -%>
+  <script>
+   getFilter=document.querySelectorAll(".filterInput")
+   cardElements=document.querySelectorAll(".cardInstrument");
+   checkboxPaiste=document.querySelector("#Paiste")
+   checkboxDW=document.querySelector("#DW")
+   checkboxGretsch=document.querySelector("#Gretsch")
+   checkboxPearl=document.querySelector("#Pearl")
+   
+   //zeige elemente des ausgewählten filters..alle anderen verschwinden
+   //wenn keine checkbox ausgewählt ist, werden alle angezeigt
+   getFilter.forEach((gf)=>{
+     gf.addEventListener("change",(gfevent)=>{
+       if(gf.checked==true){
+         cardElements.forEach((ce)=>{
+           if(gf.name==ce.getAttribute("value"))
+           ce.classList.add("show"+gf.name)
+           ce.style.display="none"
+           console.log("show"+gf.name)
+       
+         })
+         
+       }
+       else if(checkboxPaiste.checked==false&&checkboxDW.checked==false&&checkboxGretsch.checked==false&&checkboxPearl.checked==false){
+        cardElements.forEach((ce)=>{
+            ce.classList.remove("show"+gf.name)
+           ce.style.display="block"
+         })
+       }
+       else{
+        cardElements.forEach((ce)=>{
+           if(gf.name==ce.getAttribute("value"))
+           ce.classList.remove("show"+gf.name)
+           
+         })
+
+       }
+     })
+   })
+   
+  
+   </script> 
+   
+   
+  
+      
+  
+
+</div>
+</div>
+
+
+
+
+<%- include('partials/footer') -%>

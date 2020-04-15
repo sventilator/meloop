@@ -1,0 +1,44 @@
+<%- include('partials/header') -%>
+<%- include('partials/navbar') -%>
+
+
+    <div class="row-fluid headlineRow">
+      <div class="headlineDiv">
+        <h1 class="headlineH1" align="center">Willkommen zu Meloop!</h1>
+        <p class="headlineP" align="center">Lorem ipsum dolor sit amet, affert corrumpit reformidans vel et, aliquip volutpat nec ne, justo dolor inciderint sit in.
+        Id nec salutandi consulatu, sea in forensibus suscipiantur, has quis inani adolescens cu. Ad alii qualisque est.</p>
+      </div>
+     </div>
+  
+    <div class="row-fluid productTeaserRow">
+     
+        
+
+      <% productTeaserImg.forEach(function(el) {  %>
+        <div style=
+         <%= el.url %>
+        class="col-xl-4 col-lg-4 col-md-12 col-sm-12 productTeaserDiv">
+       <form action="/produktWahl" method="GET">
+        
+        <button class="zumProduktBtn" name=<%=el.id%> value=<%=el.name%> ><h3 class="productBtnText">zum Produkt</h3></button>
+       </form>   
+      </div>
+
+        <% }) %>
+      <script>
+        var testklick=document.querySelectorAll(".zumProduktBtn");
+      testklick.forEach((klick) =>{
+        klick.addEventListener("click",function(){
+          console.log(klick.name)
+        })
+      });
+      </script>
+   
+    </div>
+
+
+
+
+
+
+<%- include('partials/footer') -%>
