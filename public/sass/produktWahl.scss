@@ -1,0 +1,15 @@
+.produktWahlRow {
+    border: 1px solid black;
+    height: 600px;
+    width: 100%;
+  }
+  .produktWahlImg {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.458);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+  
+    transition: transform 0.1s; /* Animation */
+  }

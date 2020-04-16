@@ -1,0 +1,38 @@
+.homeContainer {
+  height: 100vh;
+}
+
+/* navbar section1 */
+
+@import "navbar";
+
+/* headline section */
+
+@import "homeHeadline";
+
+/* ProductTeaser section */
+
+@import "homeProductTeaser";
+
+/* kategoriestyles */
+/* banner */
+
+@import "kategorieBanner";
+
+/* kategoriecontent */
+/* kategorie Filter */
+
+@import "kategorieFilter";
+
+/* kategorie Card */
+/*die Card wird gerendert */
+
+@import "kategorieCardInstrument";
+
+/* View für die Suchanzeige*/
+
+@import "searchProducts";
+
+/* produktWahl */
+
+@import "produktWahl";

@@ -1,0 +1,123 @@
+.kategorieBanner {
+    margin-top: 40px;
+    height: 200px;
+    background-image: url(https://i.pinimg.com/originals/da/6d/7b/da6d7ba788e305bba2cfedcbf11715d6.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+  
+    background-position-y: -400px;
+  }
+  @media (max-width: 991px) {
+    .kategorieBanner {
+      top: 160px;
+    }
+    .productTeaserRow {
+      margin-top: 150px;
+    }
+    .productTeaserDiv {
+      background-size: 55%;
+    }
+  }
+  @media (max-width: 576px) {
+    .kategorieBanner {
+      top: 160px;
+    }
+  }
+  .kategorieBannerVerstaerker {
+    margin-top: 40px;
+    height: 200px;
+    background-image: url(https://i.ytimg.com/vi/P7VB1w9X-lA/maxresdefault.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position-y: -400px;
+  }
+  @media (max-width: 991px) {
+    .kategorieBannerVerstaerker {
+      top: 160px;
+    }
+  }
+  @media (max-width: 576px) {
+    .kategorieBannerVerstaerker {
+      top: 160px;
+    }
+  }
+  .kategorieBannerMikrofone {
+    margin-top: 40px;
+    height: 200px;
+    background-image: url(https://wallpaperaccess.com/full/93278.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position-y: -400px;
+  }
+  @media (max-width: 991px) {
+    .kategorieBannerMikrofone {
+      top: 160px;
+    }
+  }
+  @media (max-width: 576px) {
+    .kategorieBannerMikrofone {
+      top: 160px;
+    }
+  }
+  
+  .kategorieBannerDrums {
+    margin-top: 40px;
+    height: 200px;
+    background-image: url(https://i.pinimg.com/originals/4a/12/fc/4a12fcf55be6022c9a81f819b9e42a1b.jpg);
+    background-size: cover;
+  
+    width: 100%;
+    position: relative;
+    background-position-y: -400px;
+  }
+  @media (max-width: 991px) {
+    .kategorieBannerDrums {
+      top: 160px;
+    }
+  }
+  @media (max-width: 576px) {
+    .kategorieBannerDrums {
+      top: 160px;
+    }
+  }
+  
+  .kategorieBannerOverlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.694);
+    width: 100%;
+    height: 200px;
+  }
+  
+  .kategorieBannerText {
+    color: white;
+    z-index: 10;
+    position: absolute;
+  
+    width: 100%;
+  
+    margin-top: 75px;
+    font-weight: lighter;
+  }
+  @media (max-width: 991px) {
+    .kategorieBannerText {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 576px) {
+    .kategorieBannerText {
+      font-size: 25px;
+    }
+  }
+  .seperatorKategorieBanner {
+    position: absolute;
+    width: 100%;
+  
+    height: 1px;
+    border-bottom: 1px solid black !important;
+  
+    margin-top: 240px;
+  }
+  

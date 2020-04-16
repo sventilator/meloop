@@ -4,7 +4,8 @@
   "description": "webshop demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   
+    "sass": "node-sass public/sass/main.scss public/css/app.css -w"
   },
   "author": "sventilator",
   "license": "ISC",
@@ -17,5 +18,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.9",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
   }
 }

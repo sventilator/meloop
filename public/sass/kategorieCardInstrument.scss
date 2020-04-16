@@ -1,0 +1,115 @@
+.cardInstrument {
+    margin-top: 15px;
+    width: auto;
+    height: 500px;
+    transition: transform 0.1s; /* Animation */
+  }
+  .cardInstrument:hover {
+    /* transform: scale(1.003); */
+  
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  .showFender {
+    display: block !important;
+  }
+  
+  .showPrs {
+    display: block !important;
+  }
+  .showSchecter {
+    display: block !important;
+  }
+  
+  .showPaiste {
+    display: block !important;
+  }
+  .showDW {
+    display: block !important;
+  }
+  
+  .showGretsch {
+    display: block !important;
+  }
+  
+  .showPearl {
+    display: block !important;
+  }
+  .showShure {
+    display: block !important;
+  }
+  .showNeumann {
+    display: block !important;
+  }
+  
+  .showRode {
+    display: block !important;
+  }
+  .showOrange {
+    display: block !important;
+  }
+  
+  .showBlackstar {
+    display: block !important;
+  }
+  
+  .cardInstrumentImgDiv {
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-y: 10px;
+  
+    /*  border-left:1px solid#E2E2E2;
+      border-top:1px solid#E2E2E2;
+      border-right:1px solid#E2E2E2; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 60%;
+  }
+  
+  .cardInstrumentContent {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+  }
+  .cardInstrumentContenth1 {
+    font-size: 25px;
+  }
+  .cardInstrumentContentP {
+    font-size: 14px;
+    margin-left: 7px;
+  }
+  .cardInstrumentPrice {
+    font-weight: lighter;
+    margin-left: 60%;
+  }
+  .warenkorbCardBtn {
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translate(-50%);
+    width: 75%;
+    height: 22%;
+  
+    background-color: #ffd269;
+    border: none;
+  }
+  .warenkorbCardBtnDiv {
+    margin-top: 6px;
+  }
+  .warenkorbCardBtnIcon {
+    position: relative;
+    background-image: url(https://i.ibb.co/4V18ysr/Icon-awesome-shopping-cart.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 25px;
+    float: right;
+    top: -36px;
+    left: -10px;
+  }

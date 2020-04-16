@@ -1,0 +1,131 @@
+.kategorieFilterRow {
+    position: relative;
+    margin-left: 0px !important;
+    margin-top: 65px;
+    height: auto;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .kategorieFilterRow {
+      top: 160px;
+    }
+  }
+  @media (max-width: 576px) {
+    .kategorieFilterRow {
+      top: 160px;
+    }
+  }
+  
+  .filterDiv {
+    margin-top: 15px;
+    margin-left: -15px;
+    height: 330px;
+    width: 100%;
+    background-color: #e2e2e2;
+  }
+  .filterDivDrums {
+    margin-top: 15px;
+    margin-left: -15px;
+    height: 380px;
+    width: 100%;
+    background-color: #e2e2e2;
+  }
+  
+  .filterHerstellerHeadline {
+    width: 100%;
+    height: 50px;
+    background: #ffd269;
+  }
+  
+  .filterHerstellerHeadlineText {
+    position: relative;
+    top: 5px;
+    color: black;
+    font-weight: lighter;
+  }
+  
+  .filterInnerDiv {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  @media (max-width: 1200px) {
+    .filterDiv {
+      width: 120%;
+    }
+    .filterDivDrums {
+      width: 120%;
+    }
+    .filterInnerDiv {
+      margin-left: 10px;
+    }
+  }
+  @media (max-width: 991px) {
+    .filterDiv {
+      margin-left: 0px;
+      width: 100%;
+    }
+    .filterDivDrums {
+      margin-left: 0px;
+      width: 100%;
+    }
+    .filterInnerDiv {
+      margin-left: 20px;
+    }
+  }
+  .filterInput {
+    margin-top: -10px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"] + label::before {
+    content: "";
+    border: 1px solid black;
+    float: left;
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    background-color: white;
+  }
+  
+  input[type="checkbox"]:checked + label::before {
+    background-image: url(https://img.pngio.com/check-mark-computer-icons-check-icon-png-clipart-165882-check-mark-icon-png-880_889.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-x: 1px;
+  }
+  
+  .filterLabel {
+    margin-top: 13px;
+  }
+  
+  #sortBtn1 {
+    position: relative;
+  
+    top: 15px;
+    height: 26px;
+    width: 80px;
+    border: none;
+    background-color: #ffd269;
+  }
+  #sortBtn1:focus {
+    outline: none;
+  }
+  #sortBtn2 {
+    position: relative;
+  
+    top: 20px;
+    height: 26px;
+    width: 80px;
+    border: none;
+    background-color: #ffd269;
+  }
+  #sortBtn2:focus {
+    outline: none;
+  }
+  
+  .iconSort {
+    margin-left: 3px;
+  }
+  

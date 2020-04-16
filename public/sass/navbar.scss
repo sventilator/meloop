@@ -1,0 +1,189 @@
+.navbarRow {
+    background: black;
+    height: 80px;
+  }
+  .meloopLogoBtn {
+    border: none;
+    background-color: black;
+    position: relative;
+  }
+  
+  .meloopLogoBtn:focus {
+    outline: none !important;
+  }
+  
+  .meloopLogo {
+    position: relative;
+    margin-top: 5px;
+    left: 10px;
+    width: 200px;
+  }
+  .meloopLogoImg {
+    background-image: url(https://i.ibb.co/f2gZ3pH/meloop-Logo.png);
+    width: 180px;
+    height: 60px;
+    position: relative;
+    top: 10px;
+    background-size: 125%;
+  }
+  
+  .navbarRight {
+    background: black;
+    height: 80px;
+  }
+  
+  .searchFieldCol {
+    height: 80px;
+  }
+  .searchDiv {
+    margin-top: 20px;
+  
+    width: 100%;
+  }
+  #navSearchFieldInput {
+    border: none;
+  }
+  
+  .form-control {
+    border-radius: 0px !important;
+  }
+  .btn {
+    border-radius: 0px !important;
+  }
+  .navSearchBtn {
+    background-color: white !important;
+    height: 38px;
+  }
+  .btnSearchImg {
+    margin-top: -3px;
+    width: 25px;
+    height: 25px;
+  }
+  .form-control:focus {
+    outline: none !important;
+  }
+  
+  .meinKontoBtn {
+    position: relative;
+    width: 150px;
+    top: 18px;
+    color: #ffd269;
+    border: none;
+    background: black;
+    left: 50%;
+    margin-left: -75px;
+  }
+  .meinKontoBtn:focus {
+    outline: none;
+  }
+  .meinKontoBtnText {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+  }
+  .meinKontoImg {
+    height: 40px;
+    width: 40px;
+    margin-top: -3px;
+  }
+  .warenkorbCol {
+    border-left: 3px solid #ffd269;
+  }
+  .warenkorbDiv {
+    position: relative;
+    margin-left: -31px;
+    left: 50%;
+    height: 80px;
+    width: 62px;
+  }
+  .warenkorbBtn {
+    position: relative;
+    margin-top: 18px;
+    background-color: black;
+    border: none;
+  }
+  .warenkorbBtn:focus {
+    outline: none !important;
+  }
+  @media (max-width: 991px) {
+    .navbarRow {
+      height: 160px;
+    }
+    .navColLogo {
+      height: 160px;
+      background: black;
+    }
+    .navColRight {
+      height: 160px;
+      background: black;
+    }
+    .navbarRight {
+      height: 160px;
+    }
+    .searchDiv {
+      height: 100px;
+    }
+  
+    .meloopLogoBtn {
+      width: 300px;
+      left: 50%;
+      margin-left: -150px;
+    }
+    .meloopLogoImg {
+      top: 36px;
+      width: 300px;
+      height: 120px;
+    }
+  
+    .warenkorbCol {
+      border: none;
+    }
+  }
+  @media (max-width: 576px) {
+    .meinKontoCol {
+      background-color: black;
+      height: 80px;
+    }
+    .warenkorbCol {
+      border: none;
+      height: 80px;
+      background-color: black;
+    }
+  }
+  
+  /* navbar section2 */
+  .navbarSecondRow {
+    position: relative;
+    border-bottom: 1px solid black;
+  
+    height: 50px;
+  }
+  
+  .navBtn {
+    margin-left: 65px;
+    margin-top: 10px;
+    outline: none;
+    border: none !important;
+    background: white;
+  }
+  
+  .navBtn:focus {
+    outline: none;
+    color: #ffd269;
+  }
+  @media (max-width: 991px) {
+    .navbarSecondRow {
+      top: 160px;
+    }
+    .navBtn {
+      margin-top: 5px;
+    }
+  }
+  @media (max-width: 576px) {
+    .navbarSecondRow {
+      top: 160px;
+    }
+    .navBtn {
+      margin-top: 5px;
+    }
+  }

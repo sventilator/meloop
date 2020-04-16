@@ -1,0 +1,39 @@
+.productTeaserRow {
+    height: 400px;
+  }
+  
+  .productTeaserDiv {
+    float: left;
+    height: 400px;
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.458);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position-x: 60px;
+    background-position-y: 0px;
+    transition: transform 0.1s; /* Animation */
+  }
+  .productTeaserDiv:hover {
+    /* transform: scale(1.01); */
+  
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  /* ----------------------------------------------------------------------------- */
+  .zumProduktBtn {
+    margin-top: 300px;
+  
+    background-color: #ffd269 !important;
+    border: none;
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%);
+    width: 45%;
+    height: 15%;
+  }
+  .zumProduktBtn:focus {
+    outline: none !important;
+  }
+  .productBtnText {
+    color: black;
+    font-weight: lighter;
+  }

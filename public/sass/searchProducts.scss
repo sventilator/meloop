@@ -1,0 +1,16 @@
+.spacerRow {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 991px) {
+    .spacerRow {
+      top: 160px;
+    }
+  }
+  @media (max-width: 576px) {
+    .spacerRow {
+      top: 160px;
+    }
+  }
